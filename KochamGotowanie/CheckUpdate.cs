@@ -16,6 +16,13 @@ namespace KochamGotowanie
 
             try
             {
+                if (!webClient.DownloadString("https://pastebin.com/raw/xrmB3SKx").Contains("1.0.1")) ;
+                {
+                    Process.Start("Updater.exe");
+                }
+            }
+            catch
+            {
 
             }
         }
